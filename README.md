@@ -12,15 +12,14 @@ python trimesh_converter.py --obj {obj_path} --glb {glb_path}
 ## 2. Blender python API
 1. Download
 ```
+# download from https://ftp.nluug.nl/pub/graphics/blender/release/
 wget https://ftp.nluug.nl/pub/graphics/blender/release/Blender2.93/blender-2.93.2-linux-x64.tar.xz
-#下载blender压缩包
 tar -xf blender-2.93.2-linux-x64.tar.xz
-#解压
+# set env
 blender=$PWD/../blender/blender-2.93.2-linux-x64/blender
-#设置环境变量
 $blender -noaudio --background --python **.py
 ```
-1. Run
+2. Run
 ```
 python blender_converter.py --obj {obj_path} --glb {glb_path}
 ```
